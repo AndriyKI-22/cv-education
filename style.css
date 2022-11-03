@@ -1,0 +1,41 @@
+.i-am {
+    background: lightyellow;
+    padding: 15px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.education {
+    font-size: 1.1rem;
+    background: lightblue;
+    padding: 5px 15px 15px 15px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.education h2 {
+    margin: 0;
+}
+
+.skills {
+    font-size: 1.1rem;
+    background: lightseagreen;
+    padding: 5px 15px 15px 15px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.contact {
+    font-size: 1.1rem;
+    background: lightslategray;
+    padding: 5px 15px 15px 15px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.contact span {
+    text-decoration: underline;
+}
