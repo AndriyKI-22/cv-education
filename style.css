@@ -1,9 +1,14 @@
-.i-am {
+.head {
     background: lightyellow;
     padding: 15px;
     border: 2px solid grey;
     border-radius: 10px;
     margin-bottom: 30px;
+    display: flex;
+}
+
+picture {
+    margin-right: 40px;
 }
 
 .education {
@@ -34,8 +39,53 @@
     padding: 5px 15px 15px 15px;
     border: 2px solid grey;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
-.contact span {
-    text-decoration: underline;
+.c-reverse {
+    display: flex;
+    flex-direction: column;
 }
+
+.c-reverse input {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.c-reverse button {
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 408px;
+    height: 100px;
+}
+
+.social {
+    font-size: 1.1rem;
+    background: lightsalmon;
+    padding: 5px 15px 15px 15px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.social i {
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 1.5rem;
+    color: black;
+    transition: background 0.6s;
+}
+
+.social i:hover {
+    background: cornflowerblue;
+}
+
