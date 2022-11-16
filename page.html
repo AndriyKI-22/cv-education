@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Table</title>
 </head>
 <body>
 <style>
@@ -18,23 +18,37 @@
         height: 100px;
     }
 
-    .tr {
+    .transition {
+        transition: .5s ease-in;
+    }
 
+    .t-item:hover {
+        color: crimson;
+        cursor: pointer;
     }
 </style>
 <table class="border table">
     <tr class="tr">
-        <td> Завдання 1</td>
-        <td> Виконано</td>
+        <td class="t-item"> Завдання 1</td>
+        <td class="t-item"> Виконано</td>
     </tr>
     <tr class="tr">
-        <td> Завдання 2</td>
-        <td> Виконано</td>
+        <td class="t-item"> Завдання 2</td>
+        <td class="t-item"> Виконано</td>
     </tr>
     <tr class="tr">
-        <td> Завдання 3</td>
-        <td> Виконано</td>
+        <td class="t-item transition"> Завдання 3</td>
+        <td class="t-item transition"> Виконано</td>
     </tr>
 </table>
+<script>
+    const td = document.querySelectorAll('.t-item')
+
+    td.forEach(elem => {
+        elem.addEventListener('click', () => {
+            elem.style.color = 'blue'
+        })
+    })
+</script>
 </body>
 </html>
